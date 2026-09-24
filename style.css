@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Üst Kısım */
+
+header {
+    padding: 25px 50px;
+
+    border-bottom: 1px solid #2d2d2d;
+}
+
+.student-info h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.student-info p {
+    color: #aaaaaa;
+    font-size: 16px;
+}
+
+
+/* Ana İçerik */
+
+main {
+    flex: 1;
+    
+    padding: 70px 50px;
+}
+
+.lesson {
+    width: 100%;
+    max-width: 900px;
+
+    text-align: center;
+}
+
+.lesson h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+
+/* Ders Bilgisi */
+
+.lesson-content {
+    background-color: #1d1d1d;
+
+    border: 1px solid #303030;
+    border-radius: 12px;
+
+    padding: 30px;
+
+    text-align: left;
+
+    line-height: 1.7;
+    color: #d0d0d0;
+}
+
+
+/* Alt Kısım */
+
+footer {
+    background-color: #181818;
+
+    border-top: 1px solid #2d2d2d;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+footer p {
+    color: #aaaaaa;
+    margin: 5px 0;
+}
+
+
+/* Telefon / Küçük Ekran */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .lesson h1 {
+        font-size: 32px;
+    }
+
+    .lesson-content {
+        padding: 20px;
+    }
+
+}
